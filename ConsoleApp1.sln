@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34202.233
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PL", "PL", "{4EFCD5C7-872E-4C74-8B24-18D0BA779685}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BL", "BL", "{2ABEC5FA-FF1A-4D7D-8A9F-7398D40A64AB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DAL", "DAL", "{DC172E43-CC54-4CC3-99C2-F1C9F6366715}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary1", "ClassLibrary1\ClassLibrary1.csproj", "{D610DC39-86DA-4FBE-BFC8-33048EF25CF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "musiclib", "musiclib\musiclib.csproj", "{808D8DDE-A6E6-4B7D-8BFA-48E937FE9FB2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "musicpl", "musicpl\musicpl.csproj", "{4F351EF2-EE11-4098-B2AB-6E087276559C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D610DC39-86DA-4FBE-BFC8-33048EF25CF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D610DC39-86DA-4FBE-BFC8-33048EF25CF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D610DC39-86DA-4FBE-BFC8-33048EF25CF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D610DC39-86DA-4FBE-BFC8-33048EF25CF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{808D8DDE-A6E6-4B7D-8BFA-48E937FE9FB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{808D8DDE-A6E6-4B7D-8BFA-48E937FE9FB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{808D8DDE-A6E6-4B7D-8BFA-48E937FE9FB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{808D8DDE-A6E6-4B7D-8BFA-48E937FE9FB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F351EF2-EE11-4098-B2AB-6E087276559C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F351EF2-EE11-4098-B2AB-6E087276559C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F351EF2-EE11-4098-B2AB-6E087276559C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F351EF2-EE11-4098-B2AB-6E087276559C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D610DC39-86DA-4FBE-BFC8-33048EF25CF2} = {DC172E43-CC54-4CC3-99C2-F1C9F6366715}
+		{808D8DDE-A6E6-4B7D-8BFA-48E937FE9FB2} = {2ABEC5FA-FF1A-4D7D-8A9F-7398D40A64AB}
+		{4F351EF2-EE11-4098-B2AB-6E087276559C} = {4EFCD5C7-872E-4C74-8B24-18D0BA779685}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A1C95966-C5B5-4699-A7CF-E31061077848}
+	EndGlobalSection
+EndGlobal
