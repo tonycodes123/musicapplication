@@ -27,15 +27,15 @@ namespace musiclib
         {
             return dbcontext.songlists.ToList();
         }
-        public List<songlist> updatetsonglist()
+        public List<songlist> updatesonglists()
         {
             return dbcontext.songlists.ToList();
         }
-        public List<songlist> deletesonglist()
+        public List<songlist> deletesonglists()
         {
             return dbcontext.songlists.ToList();
         }
-        public List<songlist> insertsonglist()
+        public List<songlist> insertsonglists()
         {
             return dbcontext.songlists.ToList();
         }
