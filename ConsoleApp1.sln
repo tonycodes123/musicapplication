@@ -9,11 +9,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BL", "BL", "{2ABEC5FA-FF1A-
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DAL", "DAL", "{DC172E43-CC54-4CC3-99C2-F1C9F6366715}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary1", "ClassLibrary1\ClassLibrary1.csproj", "{D610DC39-86DA-4FBE-BFC8-33048EF25CF2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "musicdal", "ClassLibrary1\musicdal.csproj", "{D610DC39-86DA-4FBE-BFC8-33048EF25CF2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "musiclib", "musiclib\musiclib.csproj", "{808D8DDE-A6E6-4B7D-8BFA-48E937FE9FB2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "musiclib", "musiclib\musiclib.csproj", "{808D8DDE-A6E6-4B7D-8BFA-48E937FE9FB2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "musicpl", "musicpl\musicpl.csproj", "{4F351EF2-EE11-4098-B2AB-6E087276559C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "musicpl", "musicpl\musicpl.csproj", "{4F351EF2-EE11-4098-B2AB-6E087276559C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

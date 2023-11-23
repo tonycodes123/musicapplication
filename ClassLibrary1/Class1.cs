@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace ClassLibrary1
+namespace musicdal
 {
     public class albumlist
     {
@@ -36,9 +36,9 @@ namespace ClassLibrary1
 
     public class musicdbcontext : DbContext
     {
-        DbSet<albumlist> albumlist { get; set; }
-        DbSet<songlist> songlist { get; set; }
-        DbSet<singerlist> singerlist { get; set; }
+       public DbSet<albumlist> albumlists { get; set; }
+        public DbSet<songlist> songlists { get; set; }
+        public DbSet<singerlist> singerlists { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(@"Server=(localdb)\MSSQLLocalDB;Database=MusicDB;Trusted_Connection=true");
