@@ -19,11 +19,11 @@ namespace musiclib
 
 
         public string songname { get; set; }
-        public List<singerlist> singerid { get; set; }
+        public int singerid { get; set; }
 
         public DateTime songreleasedate { get; set; }
 
-        public List<songlist> GetSonglists()
+        public static List<songlist> GetSonglists()
         {
             return dbcontext.songlist.ToList();
         }
@@ -40,5 +40,9 @@ namespace musiclib
             return dbcontext.songlists.ToList();
         }
 
+        public object? GetSongdetails()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

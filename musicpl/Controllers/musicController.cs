@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using musiclib;
+using musicpl.Models;
 
 namespace musicpl.Controllers
 {
@@ -9,16 +10,16 @@ namespace musicpl.Controllers
     public class musicController : Controller
     {
         [HttpGet("/getsongs")]
-        //public IActionResult GetAllSongs()
-        //{
-        //    var song = SongOperations.GetAllSongs();
-        //    return View("SongsList", songs);
-        //}
+        public IActionResult GetAllSongs()
+        {
+            var song = SongOperations.GetAllSongs();
+            return View("SongsList", song);
+        }
         //crud
-        public IActionResult GetSonglist()
+        public IActionResult GetSongdetails()
         {
             var songBl = new songlistops();
-            return View("FromDb", songBl.GetSonglists());
+            return View("FromDb", songBl.GetSongdetails());
         }
 
         public IActionResult insertsonglist()
