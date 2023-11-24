@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using musiclib;
 using musicpl.Models;
 
 namespace musicpl.Controllers
@@ -15,30 +14,39 @@ namespace musicpl.Controllers
             var song = SongOperations.GetAllSongs();
             return View("SongsList", song);
         }
-        //crud
-        public IActionResult GetSongdetails()
+      
+        [HttpGet("/search/{sname}")]
+        public IActionResult GetSongdetails(string sname)
         {
-            var songBl = new songlistops();
-            return View("FromDb", songBl.GetSongdetails());
+            var songBl = SongOperations.Search(sname);
+            return View("search", songBl);
         }
-
-        public IActionResult insertsonglist()
-        {
-            var songBl = new songlistops();
-            return View("InsertDb", songBl.insertsonglists());
-        }
-
-        public IActionResult updatetsonglist()
-        {
-            var songBl = new songlistops();
-            return View("UpdateDb", songBl.updatesonglists());
-        }
-
-        public IActionResult deletesonglist()
-        {
-            var songBl = new songlistops();
-            return View("DeleteDb", songBl.deletesonglists());
-        }
-
+        /*
+      [HttpGet("/create")]
+      public IActionResult create()
+      {
+          return View("create", new songlist());
+      }
+      [HttpPost("/create")]
+      public IActionResult create([FromForm] songlist p)
+      {
+          SongOperations.CreateNew(p);
+          return View("SongsList", SongOperations.GetAllSongs());
+      }
+      [HttpGet("/edit/{sname}")]
+      public IActionResult edit(string sname)
+      {
+          var found2 = SongOperations.Search(sname);
+          return View("edit", found2);
+      }
+      [HttpPost("/edit/{sname}")]
+      public IActionResult edit(string sname, [FromForm] songlist p)
+      {
+          var found3 = SongOperations.Search(p.songname);
+          found3.songname = p.songname;
+          found3.songid = p.songid;
+          found3.songreleasedate = p.songreleasedate;
+          return View("SongsList", SongOperations.GetAllSongs());
+      }*/
     }
 }

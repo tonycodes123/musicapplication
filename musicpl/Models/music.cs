@@ -22,15 +22,15 @@ namespace musicpl.Models
            return songlistops.GetSonglists();
         }
 
-        public static songlist Search(int psongid)
+        public static songlist Search(string sname)
         {
-            return GetAllSongs().Where(p => p.songid == psongid).FirstOrDefault();
+            return GetAllSongs().Where(p => p.songname == sname).FirstOrDefault();
         }
 
-        internal static void CreateNew(songlist e)
+        internal static void CreateNew(songlist p)
         {
-            GetAllSongs();
-            _song.Add(e);
+            //GetAllSongs();
+            GetAllSongs().Add(p);
         }
     }
 }

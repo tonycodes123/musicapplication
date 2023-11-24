@@ -25,24 +25,20 @@ namespace musiclib
 
         public static List<songlist> GetSonglists()
         {
-            return dbcontext.songlist.ToList();
+            return dbcontext.songlists.ToList() as List<songlist>;
         }
-        public List<songlist> updatesonglists()
+        public static List<songlist> updatesonglists()
         {
             return dbcontext.songlists.ToList();
         }
-        public List<songlist> deletesonglists()
+        public static List<songlist> deletesonglists()
         {
             return dbcontext.songlists.ToList();
         }
-        public List<songlist> insertsonglists()
+        public static List<songlist> insertsonglists()
         {
             return dbcontext.songlists.ToList();
         }
 
-        public object? GetSongdetails()
-        {
-            throw new NotImplementedException();
-        }
     }
 }
