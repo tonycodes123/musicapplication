@@ -25,7 +25,7 @@ namespace musiclib
 
         public static List<songlist> GetSonglists()
         {
-            return dbcontext.songlists.ToList() as List<songlist>;
+            return dbcontext.songlists.ToList();
         }
         public static List<songlist> updatesonglists()
         {

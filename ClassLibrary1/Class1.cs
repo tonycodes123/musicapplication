@@ -21,7 +21,7 @@ namespace musicdal
         public int songid { get; set; }
          
         public string songname { get; set; }
-        public List<singerlist> singerid { get; set; }
+        
 
         public DateTime songreleasedate { get; set; }
     }
@@ -32,6 +32,7 @@ namespace musicdal
         public int singerid { get; set;}
         public string singername { get; set;}
         public string singerimage { get; set; }
+        public List<songlist> songid { get; set; }
     }
 
     public class musicdbcontext : DbContext

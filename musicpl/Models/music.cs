@@ -30,6 +30,7 @@ namespace musicpl.Models
         internal static void CreateNew(songlist p)
         {
             //GetAllSongs();
+            GetAllSongs();
             GetAllSongs().Add(p);
         }
     }
