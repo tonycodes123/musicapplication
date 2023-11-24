@@ -14,7 +14,7 @@ namespace musicpl.Controllers
             var song = SongOperations.GetAllSongs();
             return View("SongsList", song);
         }
-      
+      //manojgandu
         [HttpGet("/search/{sname}")]
         public IActionResult GetSongdetails(string sname)
         {
