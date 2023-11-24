@@ -30,7 +30,7 @@ namespace musicdal
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int singerid { get; set;}
-        public string singername { get; set;}
+        public string singername { get; set;} 
         public string singerimage { get; set; }
         public List<songlist> songid { get; set; }
     }
