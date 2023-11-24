@@ -27,17 +27,30 @@ namespace musiclib
         {
             return dbcontext.songlists.ToList();
         }
-        public static List<songlist> updatesonglists()
+        public static void updatesonglists(string pname, int psongid, DateTime psongreleasedate)
         {
-            return dbcontext.songlists.ToList();
+            var tobeupdated = dbcontext.songlists.ToList().Where((p) => p.songname == pname).FirstOrDefault();
+            tobeupdated.songname = pname;
+            tobeupdated.songid = psongid;
+            tobeupdated.songreleasedate = psongreleasedate;
+            dbcontext.SaveChanges();
+
         }
-        public static List<songlist> deletesonglists()
+        public static void deletesonglists(string pname)
         {
-            return dbcontext.songlists.ToList();
+            var tobedeleted = dbcontext.songlists.ToList().Where((p) => p.songname == pname).FirstOrDefault();
+            dbcontext.songlists.Remove(tobedeleted);
+            dbcontext.SaveChanges();
         }
-        public static List<songlist> insertsonglists()
+        public static void insertsonglists(string pname, int psongid, DateTime psongreleasedate)
         {
-            return dbcontext.songlists.ToList();
+            dbcontext.songlists.Add(new songlist() { songname = pname, songid = psongid, songreleasedate = psongreleasedate });
+            dbcontext.SaveChanges();
+        }
+        public static songlist search1(string sname)
+        {
+            var res = dbcontext.songlists.ToList().Where(p => p.songname == sname).FirstOrDefault();
+            return res as songlist;
         }
 
     }

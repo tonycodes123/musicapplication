@@ -27,11 +27,12 @@ namespace musicpl.Models
             return GetAllSongs().Where(p => p.songname == sname).FirstOrDefault();
         }
 
-        internal static void CreateNew(songlist p)
+        public static void CreateNew(songlist p)
         {
             //GetAllSongs();
             GetAllSongs();
             GetAllSongs().Add(p);
+            
         }
     }
 }

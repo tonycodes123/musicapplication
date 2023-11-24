@@ -35,8 +35,9 @@ public IActionResult create([FromForm] songlist p)
 {
   SongOperations.CreateNew(p);
   return View("SongsList", SongOperations.GetAllSongs());
+ 
 }
-        /*
+       
 [HttpGet("/edit/{sname}")]
 public IActionResult edit(string sname)
 {
@@ -51,6 +52,8 @@ found3.songname = p.songname;
 found3.songid = p.songid;
 found3.songreleasedate = p.songreleasedate;
 return View("SongsList", SongOperations.GetAllSongs());
-} */
+}
     }
 }
+
+

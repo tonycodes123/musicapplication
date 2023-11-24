@@ -15,6 +15,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "musiclib", "musiclib\musicl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "musicpl", "musicpl\musicpl.csproj", "{4F351EF2-EE11-4098-B2AB-6E087276559C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "musicapi", "musicapi\musicapi.csproj", "{F0A370C8-C40A-43E2-9082-F15C59F336BD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{4F351EF2-EE11-4098-B2AB-6E087276559C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4F351EF2-EE11-4098-B2AB-6E087276559C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4F351EF2-EE11-4098-B2AB-6E087276559C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0A370C8-C40A-43E2-9082-F15C59F336BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0A370C8-C40A-43E2-9082-F15C59F336BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0A370C8-C40A-43E2-9082-F15C59F336BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0A370C8-C40A-43E2-9082-F15C59F336BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -41,6 +47,7 @@ Global
 		{D610DC39-86DA-4FBE-BFC8-33048EF25CF2} = {DC172E43-CC54-4CC3-99C2-F1C9F6366715}
 		{808D8DDE-A6E6-4B7D-8BFA-48E937FE9FB2} = {2ABEC5FA-FF1A-4D7D-8A9F-7398D40A64AB}
 		{4F351EF2-EE11-4098-B2AB-6E087276559C} = {4EFCD5C7-872E-4C74-8B24-18D0BA779685}
+		{F0A370C8-C40A-43E2-9082-F15C59F336BD} = {4EFCD5C7-872E-4C74-8B24-18D0BA779685}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A1C95966-C5B5-4699-A7CF-E31061077848}
